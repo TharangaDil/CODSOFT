@@ -1,67 +1,62 @@
-.logo{
-    width:10%;
-    height: 15%;
-   margin-left: 2%;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.nav-link{
-    list-style: none;
-    display: flex;   
-    
+.navb {
+    background-color: #333;
+    overflow: hidden;
 }
-.navb{
-    display: flex;
-}
-.nav-link li{
-    padding: 10px 35px;
-   
-}
-.nav-link a{
-    font-weight: bold;
-    font-size: 25px;
+.navb a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-family: "Merriweather", serif;
+}
+.navb a:hover {
+    background-color: #ddd;
     color: black;
 }
-
-header {
-    display: flex;
-   
-    opacity: 0.7;
+.section {
+    display: none;
+    padding: 20px;
 }
-
-.navigation{
-    height: 55px;
-    margin-left: 45%;
-  
+.section.active {
+    display: block;
 }
-.body{
-    background-image: url('./img/ninearch.jpg');
+.logo {
+    height: 50px;
+}
+/* Add your existing CSS here */
+.content {
+    background-image: url('img/ninearch.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     opacity: 0.8;
 }
-
-.topic{
+.topic {
     font-family: serif;
     font-size: 85px;
     margin-left: 33%;
     padding-top: 14%;
     font-weight: bold;
 }
-.topic2{
+.topic2 {
     font-family: Comic Sans MS;
     font-size: 50px;
     font-weight: bold;
     margin-left: 35%;
 }
-.description{
+.description {
     font-size: 20px;
     font-weight: bold;
     margin-left: 5%;
     padding-top: 5%;
 }
-.para{
+.para {
     font-size: 17px;
     font-weight: bold;
     margin-left: 5%;
@@ -69,101 +64,97 @@ header {
     text-align: justify;
     margin-right: 25%;
 }
-.body{
+.body {
     background-color: rgba(192, 245, 58, 0.552);
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
     opacity: 0.8;
 }
-.topic1{
+.topic1 {
     font-size: 30px;
     text-align: center;
     padding-top: 3%;
-    font-family:Berkshire Swash; ;
+    font-family: Berkshire Swash;
 }
-.nature{
+.nature {
     width: 100%;
-   
 }
-.topics{
+.topics {
     font-size: 20px;
     font-weight: bold;
     padding-top: 1%;
     margin-left: 3%;
 }
-.describe{
+.describe {
     margin-left: 5%;
     margin-right: 10%;
     text-align: justify;
 }
-.images{
+.images {
     height: 400px;
     width: 600px;
 }
-.place{
+.place {
     background-color: rgba(192, 245, 58, 0.464);
-    
 }
-.data{
+.data {
     display: flex;
 }
-.placedata{
+.placedata {
     padding-left: 3%;
     padding-right: 3%;
     text-align: justify;
     padding-top: 5%;
 }
-.top{
+.top {
     font-size: 16px;
-    
 }
-.pname{
+.pname {
     font-weight: bold;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-.sigiri{
+.sigiri {
     height: 400px;
     width: 1300px;
 }
-.album{
+.album {
     padding-top: 2%;
     padding-left: 4%;
     background-color: rgba(192, 245, 58, 0.464);
-   
 }
-.albumimg{
+.albumimg {
     padding-left: 3%;
     height: 400px;
     width: 600px;
     padding-top: 2%;
 }
-.below{
-    height:150px;
-    display: flex;
+.below {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
-.contact{
-    padding-top: 3%;
-    margin-left: 5%;
+.contact {
+    font-size: 18px;
     font-weight: bold;
-    
 }
-.detail{
-    margin-left: 5%;
-    padding-top: 1%;
+.page {
+    margin-top: 20px;
 }
-.f li{
-    list-style: none;
+.page ul {
+    list-style-type: none;
+    padding: 0;
 }
-.f li a{
-    font-weight: bold;
-
+.page ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.page ul li a {
+    color: white;
     text-decoration: none;
-    
-    color: black;
 }
-.page{
-    padding-top: 2%;
-    padding-left: 20%;
+.page ul li a:hover {
+    color: #ddd;
 }
