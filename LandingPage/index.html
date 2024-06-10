@@ -8,13 +8,15 @@
  
 </head>
 <body>
-    <div class="navb">
+    <div class="navbar">
+        <img src="./img/logo.png" class="logo">
+    <div class="nav">
         <a href="#" onclick="showSection('home')">Home</a>
         <a href="#" onclick="showSection('about')">About</a>
         <a href="#" onclick="showSection('places')">Places</a>
         <a href="#" onclick="showSection('gallery')">Gallery</a>
     </div>
-
+    </div>
     <div id="home" class="section active">
         <div class='content'>
             <div class='topic'>SRI LANKA</div>
@@ -164,18 +166,23 @@
             activeSection.classList.add('active');
         }
     </script>
-     <div className="below">
-        <div className='contact'>
+     <div class="below">
+        <div class='contact'>
             CONTACT US<br/><br/>
             E-mail: srilankatourandtravel@gmail.com<br/>
             Contact No: +94 110286589
         </div>
-        <div className='page'>
-            <ul className='f'>
-                <li><a href='/'>HOME</a></li>
-                <li><a href='/About'>ABOUT</a></li>
-                <li><a href='/Place'>PLACES</a></li>
-                <li><a href='/Gallery'>GALLERY</a></li>
+        <div class='page'>
+            <ul class='f'>
+                <li><a href="#" onclick="showSection('home')">HOME</a></li><br/>
+                <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+            </ul>
+            
+        </div>
+        <div class="page2">
+            <ul class="f2">
+                <li><a href="#" onclick="showSection('places')">PLACES</a></li><br/>
+                <li><a href="#" onclick="showSection('gallery')">GALLERY</a></li><br/>
             </ul>
         </div>
     </div>
