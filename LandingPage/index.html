@@ -1,68 +1,344 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body>
-            <div class="navb">
-                <img src="img/logo.png" class="logo" alt="Logo" />
-                <nav class="navigation">
-                    <ul class="nav-link">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/About">About</a></li>
-                        <li><a href="/Place">Places</a></li>
-                        <li><a href="/Gallery">Gallery</a></li>
-                    </ul>
-                </nav>
+    <title>Single Page Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navb {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navb a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navb a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .logo {
+            height: 50px;
+        }
+        /* Add your existing CSS here */
+        .content {
+            background-image: url('img/ninearch.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            opacity: 0.8;
+        }
+        .topic {
+            font-family: serif;
+            font-size: 85px;
+            margin-left: 33%;
+            padding-top: 14%;
+            font-weight: bold;
+        }
+        .topic2 {
+            font-family: Comic Sans MS;
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 35%;
+        }
+        .description {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 5%;
+            padding-top: 5%;
+        }
+        .para {
+            font-size: 17px;
+            font-weight: bold;
+            margin-left: 5%;
+            padding-top: 1%;
+            text-align: justify;
+            margin-right: 25%;
+        }
+        .body {
+            background-color: rgba(192, 245, 58, 0.552);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 110vh;
+            opacity: 0.8;
+        }
+        .topic1 {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 3%;
+            font-family: Berkshire Swash;
+        }
+        .nature {
+            width: 100%;
+        }
+        .topics {
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 1%;
+            margin-left: 3%;
+        }
+        .describe {
+            margin-left: 5%;
+            margin-right: 10%;
+            text-align: justify;
+        }
+        .images {
+            height: 400px;
+            width: 600px;
+        }
+        .place {
+            background-color: rgba(192, 245, 58, 0.464);
+        }
+        .data {
+            display: flex;
+        }
+        .placedata {
+            padding-left: 3%;
+            padding-right: 3%;
+            text-align: justify;
+            padding-top: 5%;
+        }
+        .top {
+            font-size: 16px;
+        }
+        .pname {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .sigiri {
+            height: 400px;
+            width: 1300px;
+        }
+        .album {
+            padding-top: 2%;
+            padding-left: 4%;
+            background-color: rgba(192, 245, 58, 0.464);
+        }
+        .albumimg {
+            padding-left: 3%;
+            height: 400px;
+            width: 600px;
+            padding-top: 2%;
+        }
+        .below {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .page {
+            margin-top: 20px;
+        }
+        .page ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .page ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .page ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .page ul li a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="navb">
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('places')">Places</a>
+        <a href="#" onclick="showSection('gallery')">Gallery</a>
+    </div>
+
+    <div id="home" class="section active">
+        <div class='content'>
+            <div class='topic'>SRI LANKA</div>
+            <div class='topic2'>Tour And Travel</div>
+            <div class='description'>
+                Welcome to Sri Lanka Tour And Travel!<br/>
             </div>
-        
-            <div id="home" class="section active">
-                <div className='content'> 
-                    <div className='topic'>
-                            SRI LANKA  
+            <div class='para'>
+                Sri Lanka is an island nation located in the Indian Ocean known for its spectacular beaches,
+                thousand-year-old Buddhist temples, abundance of wildlife, and rich archaeological history. <br/>
+                You can know the details of beautiful places in Sri Lanka through this website.
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="body">
+            <img src="img/deer.jpg" class='nature'/>
+            <div class='topics'>History</div>
+            <p class='describe'>In 1966, the Government decided to develop tourism in a planned and systematic manner, after identifying 
+                the need to set up an institutional framework. The Ceylon Tourist Board (created by the Ceylon Tourist Board Act 
+                No. 10 of 1966) and the Ceylon Hotels Corporation (created by Ceylon Hotels Corporation Act of 1966) were set up duly.</p>
+            <p class='describe'>In October 2007 the Tourism Act No 38 of 2005 came into effect. With the circulation of the new Tourism act, the Sri Lanka 
+                Tourist Board Act No 10 of 1966, which was in effect for the past 41 years, was replaced.</p>
+            <div class='topics'>Philosophy</div>
+            <p class='describe'>Sri Lanka Tourism Promotion Bureau (SLTPB) is the government body responsible for handling all marketing and promotional 
+                activities related to the travel and tourism industry of Sri Lanka. The Bureau headed by the Chairman, Managing Director and
+                a Board of Directors comprising of representatives from the Tourist Hotels Association of Sri Lanka, Sri Lanka Association 
+                of Inbound Tour Operators, Association of Small and Medium Enterprises in Tourism etc.</p>
+        </div>
+    </div>
+
+    <div id="places" class="section">
+        <div class='place'>
+            <div class="topic1">Beautiful Places in Sri Lanka</div><br/>
+            <div class='top'>Here are the top 10 tourist places and attractions in Sri Lanka</div>
+            <div>
+                <ol>
+                    <li>
+                        <div class='pname'>Ella</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/ella.jpg" class='images'/>
+                            <p class='placedata'>Tucked into Badulla District, Ella is a charming laidback town drawing travelers to Sri Lanka's highlands with 
+                                tea plantations, mountain jungles, and a cool climate.</p>
                         </div>
-                        <div className='topic2'>
-                        Tour And Travel
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Kandy</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/kandy.jpg" class='images'/>
+                            <p class='placedata'>Settled on a plateau encircled by lush mountains, Kandy is a large city in central Sri Lanka with biodiverse 
+                                rainforests and tea plantations.</p>
                         </div>
-            
-                        <div className='description'>
-                            Welcome to Sri Lanka Tour And Travel!<br/>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Anuradhapura</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/pure.jpg" class='images'/>
+                            <p class='placedata'>Anuradhapura, an ancient city nestled in the heart of Sri Lanka's North Central Province, stands as a living 
+                                testament to the island's rich cultural and historical legacy.</p>
                         </div>
-                        <div className='para'>
-                        Sri Lanka is an island nation located in the Indian Ocean known for its spectacular beaches, 
-                            thousand-year-old Buddhist temples, abundance of wildlife, and rich archaeological history. <br/>
-                            You can know the details of beautiful places in Sri Lanka through this web site.
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Sigiriya</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/sigiriya.jpg" class='sigiri'/>
+                            <p class='placedata'>Sigiriya, often referred to as the "Lion Rock," is an ancient rock fortress and UNESCO World Heritage Site located 
+                                in the central Matale District of Sri Lanka. It is located between Dambulla and Habarane and is one of the most 
+                                visited tourist destinations in Sri Lanka.</p>
                         </div>
-                        
-                    </div>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Trincomalee</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/trinco.jpg" class='images'/>
+                            <p class='placedata'>The quaint city of Trincomalee, also famously known as ‘Gokarna’, is nestled on the northeastern coast of Sri Lanka. 
+                                It is a city steeped in history, blessed with natural beauty, and vibrant with cultural diversity. Whether looking to 
+                                relax on the beach</p>
+                        </div>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Dambulla</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/dambulla.jpg" class='images'/>
+                            <p class='placedata'>Dambulla, situated in central Sri Lanka, is a historic town renowned for its ancient cave temples and rich cultural heritage.</p>
+                        </div>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Yala National Park</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/yala.jpg" class='images'/>
+                            <p class='placedata'>Sprawled over 979 square kilometres, Yala National Park in southeast Sri Lanka is the nation’s largest and 
+                                most-visited wildlife conservation zone.</p>
+                        </div>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Adam’s Peak</div><br/>
+                        <div class='data'>
+                            <img src="img/samanala.jpg" class='images'/>
+                            <p class='placedata'>As one of the most famous pilgrimage sites in the Indian subcontinent, Adam’s Peak is a 7,359 feet tall mountain in 
+                                Sri Lanka, frequently visited by people of almost all major religions. It is widely known for Sri Pada, a foot-shaped 
+                                indentation at the summit of the pyramid-like mountain.</p>
+                        </div>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Jaffna</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/jaffna.jpg" class='images'/>
+                            <p class='placedata'>Jaffna is probably Sri Lanka's most historical city located at the northern tip on the country and the city from 
+                                time to time had been passed under the rule of various kingdoms, governments and the armies.</p>
+                        </div>
+                    </li><br/><br/>
+                    <li>
+                        <div class='pname'>Galle</div><br/><br/>
+                        <div class='data'>
+                            <img src="img/galle.jpg" class='images'/>
+                            <p class='placedata'>Tucked into the southwest coast of Sri Lanka, Galle is a major city and UNESCO World Heritage Site.</p>
+                        </div>
+                    </li><br/><br/>
+                </ol>
             </div>
-            <div id="about" class="section">
-                <h1>About</h1>
-                <p>About us page content.</p>
+        </div>
+    </div>
+
+    <div id="gallery" class="section">
+        <div class='albumback'>
+            <div class='album'>
+                <img src="img/sigiriya.jpg" class='albumimg'/>
+                <img src="img/pure.jpg" class='albumimg'/>
+                <img src="img/galle.jpg" class='albumimg'/>
+                <img src="img/dambulla.jpg" class='albumimg'/>
+                <img src="img/temple.jpg" class='albumimg'/>
+                <img src="img/nature.jpg" class='albumimg'/>
+                <img src="img/beach.jpg" class='albumimg'/>
+                <img src="img/train.jpg" class='albumimg'/>
             </div>
-            <div id="place" class="section">
-                <h1>Places</h1>
-                <p>Information about different places.</p>
-            </div>
-            <div id="gallery" class="section">
-                <h1>Gallery</h1>
-                <p>Gallery page content.</p>
-            </div>
-        
-            <script>
-                function showSection(sectionId) {
-                    // Hide all sections
-                    var sections = document.querySelectorAll('.section');
-                    sections.forEach(function(section) {
-                        section.classList.remove('active');
-                    });
-        
-                    // Show the selected section
-                    var activeSection = document.getElementById(sectionId);
-                    activeSection.classList.add('active');
-                }
-            </script>
-    </body>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            var activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+     <div className="below">
+        <div className='contact'>
+            CONTACT US<br/><br/>
+            E-mail: srilankatourandtravel@gmail.com<br/>
+            Contact No: +94 110286589
+        </div>
+        <div className='page'>
+            <ul className='f'>
+                <li><a href='/'>HOME</a></li>
+                <li><a href='/About'>ABOUT</a></li>
+                <li><a href='/Place'>PLACES</a></li>
+                <li><a href='/Gallery'>GALLERY</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
