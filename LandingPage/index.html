@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+            <div class="navb">
+                <img src="img/logo.png" class="logo" alt="Logo" />
+                <nav class="navigation">
+                    <ul class="nav-link">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/About">About</a></li>
+                        <li><a href="/Place">Places</a></li>
+                        <li><a href="/Gallery">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div id="home" class="section active">
+                <div className='content'> 
+                    <div className='topic'>
+                            SRI LANKA  
+                        </div>
+                        <div className='topic2'>
+                        Tour And Travel
+                        </div>
+            
+                        <div className='description'>
+                            Welcome to Sri Lanka Tour And Travel!<br/>
+                        </div>
+                        <div className='para'>
+                        Sri Lanka is an island nation located in the Indian Ocean known for its spectacular beaches, 
+                            thousand-year-old Buddhist temples, abundance of wildlife, and rich archaeological history. <br/>
+                            You can know the details of beautiful places in Sri Lanka through this web site.
+                        </div>
+                        
+                    </div>
+            </div>
+            <div id="about" class="section">
+                <h1>About</h1>
+                <p>About us page content.</p>
+            </div>
+            <div id="place" class="section">
+                <h1>Places</h1>
+                <p>Information about different places.</p>
+            </div>
+            <div id="gallery" class="section">
+                <h1>Gallery</h1>
+                <p>Gallery page content.</p>
+            </div>
+        
+            <script>
+                function showSection(sectionId) {
+                    // Hide all sections
+                    var sections = document.querySelectorAll('.section');
+                    sections.forEach(function(section) {
+                        section.classList.remove('active');
+                    });
+        
+                    // Show the selected section
+                    var activeSection = document.getElementById(sectionId);
+                    activeSection.classList.add('active');
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+.logo{
+    width:10%;
+    height: 15%;
+   margin-left: 2%;
+}
+.nav-link{
+    list-style: none;
+    display: flex;   
+    
+}
+.navb{
+    display: flex;
+}
+.nav-link li{
+    padding: 10px 35px;
+   
+}
+.nav-link a{
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    color: black;
+}
+
+header {
+    display: flex;
+   
+    opacity: 0.7;
+}
+
+.navigation{
+    height: 55px;
+    margin-left: 45%;
+  
+}
+.body{
+    background-image: url('./img/ninearch.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.topic{
+    font-family: serif;
+    font-size: 85px;
+    margin-left: 33%;
+    padding-top: 14%;
+    font-weight: bold;
+}
+.topic2{
+    font-family: Comic Sans MS;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 35%;
+}
+.description{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+.para{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 5%;
+    padding-top: 1%;
+    text-align: justify;
+    margin-right: 25%;
+}
+.body{
+    background-color: rgba(192, 245, 58, 0.552);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    opacity: 0.8;
+}
+.topic1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 3%;
+    font-family:Berkshire Swash; ;
+}
+.nature{
+    width: 100%;
+   
+}
+.topics{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 1%;
+    margin-left: 3%;
+}
+.describe{
+    margin-left: 5%;
+    margin-right: 10%;
+    text-align: justify;
+}
+.images{
+    height: 400px;
+    width: 600px;
+}
+.place{
+    background-color: rgba(192, 245, 58, 0.464);
+    
+}
+.data{
+    display: flex;
+}
+.placedata{
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    padding-top: 5%;
+}
+.top{
+    font-size: 16px;
+    
+}
+.pname{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sigiri{
+    height: 400px;
+    width: 1300px;
+}
+.album{
+    padding-top: 2%;
+    padding-left: 4%;
+    background-color: rgba(192, 245, 58, 0.464);
+   
+}
+.albumimg{
+    padding-left: 3%;
+    height: 400px;
+    width: 600px;
+    padding-top: 2%;
+}
+.below{
+    height:150px;
+    display: flex;
+}
+.contact{
+    padding-top: 3%;
+    margin-left: 5%;
+    font-weight: bold;
+    
+}
+.detail{
+    margin-left: 5%;
+    padding-top: 1%;
+}
+.f li{
+    list-style: none;
+}
+.f li a{
+    font-weight: bold;
+
+    text-decoration: none;
+    
+    color: black;
+}
+.page{
+    padding-top: 2%;
+    padding-left: 20%;
+}
