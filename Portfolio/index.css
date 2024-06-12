@@ -169,8 +169,12 @@ body {
 }
 .res{
     display: flex;
+    line-height: 2;
 }
 .cvlink{
     padding-top: 17%;
     padding-left: 5%;
+}
+.dow{
+    padding-left: 25%;
 }
