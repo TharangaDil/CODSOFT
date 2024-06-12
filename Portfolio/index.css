@@ -128,3 +128,49 @@ body {
 .tagimg{
     padding-top: 3%;
 }
+.footer{
+    display: flex;
+    background: transparent;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+   bottom: 0;
+    width: 100%;
+    z-index: 1000; 
+    color: white;
+    margin-bottom: 0;
+}
+.p1{
+    padding-top: 5%;
+    margin-left: 10%;
+    width:500px;
+    line-height: 1.5;
+    
+}
+.ptopic{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.primage{
+    width:300px;
+    height: 150px;
+    padding-left: 10%;
+}
+.prtable{
+    display: flex;
+}
+.cv{
+    height: 500px;
+    width: 350px;
+    margin-left: 15%;
+    padding-top: 4%;
+}
+.res{
+    display: flex;
+}
+.cvlink{
+    padding-top: 17%;
+    padding-left: 5%;
+}
