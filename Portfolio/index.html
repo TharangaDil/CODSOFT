@@ -8,16 +8,82 @@
     </head>
     <body>
         <div class="nav">
-            <div>Tharanga Dilshani Gunawardhana</div>
-            <div>
-                <a href="#" onclick="showSection('home')">Home</a>
+            <div class="name">Tharanga Dilshani</div>
+            <div class="attribute">
                 <a href="#" onclick="showSection('about')">About</a>
                 <a href="#" onclick="showSection('skill')">Skills</a>
-                <a href="#" onclick="showSection('projects')">Projects</a>
+                <a href="#" onclick="showSection('project')">Projects</a>
                 <a href="#" onclick="showSection('resume')">Resume</a>
                 <a href="#" onclick="showSection('contact')">Contact</a>
         
             </div>
         </div>
+        <section id="about">
+            <div class="content">
+                <div class="data">
+                 <div class="hello" >Hello, It's me</div>
+                 <div class="n">Tharanga Dilshani</div>
+                 <p class="para">I'm Information Technology student. I consider my self a responsible and orderly person.
+                     <br/>I'm undergratuated student from University of Jaffna. <br/>
+                     I have honed my skills in web designing, front-end design and UI/UX design.  
+                 </p>
+                </div> 
+               <div class="photo">
+                 <img src="./img/photo.png" class="image" />
+               </div>  
+                 
+             </div>
+        </section>
+        <section id="skill">
+            <div class="content">
+                <div>My Skills</div>
+                <ul>
+                    <li>Technical Skills
+                        <br/>
+                        <ul>
+                            <li>html</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+                    </li>
+                    <li>Professional Skills
+                        Communication
+                        Creativity
+                        Problem Solving
+                        Team Work
+                    </li>
+                    
+                </ul>
+            </div>
+            
+
+        </section>
+        <section id="project">
+            <div class="content">
+                <div>My Projects</div>
+            </div>
+        </section>
+        <section id="resume">
+            <div class="content">
+                <div>My Resume</div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="content">
+                <div>Contact Me</div>
+            </div>
+        </section>
+
+
+        <script>
+            function showSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            </script>
+        
     </body>
 </html>
