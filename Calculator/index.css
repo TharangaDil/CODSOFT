@@ -1,0 +1,45 @@
+.topic{
+    font-family:fantasy;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+body{
+    background-color: blueviolet;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btnequ{
+    width:50px;
+    height: 150px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btnzero{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.res{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+}
+.cal{
+    padding-top: 5%;
+    margin-left: 42%;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.btn:hover, .btnequ:hover, .btnzero:hover {
+    background-color: #f0e68c;
+   
+}
